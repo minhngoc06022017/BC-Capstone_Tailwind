@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azzle</title>
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
     <!-- Import css -->
-    <link rel="stylesheet" href="/src/css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/custom.css">
 </head>
 
 <body>
@@ -100,8 +109,80 @@
 
     <!-- Bao -->
     <section class="features">
-        <div class="container">
-
+        <div class="container-fluid w-[85.5%] mx-auto pt-[130px] pb-[150px]">
+            <h1 class=" text-[80px] font-bold w-[60%] leading-20 tracking-wide mb-20">
+                Core features that make it valuable
+            </h1>
+            <div class="grid grid-cols-4 gap-0.5 bg-black border-2 border-black rounded-xl">
+                <div class="item bg-white rounded-l-[10px] p-[30px] transition-all duration-500">
+                    <div class="relative mb-9 h-[70px] w-[70px]">
+                        <img src="./img/azzle/service-icon-black-1.svg" alt="">
+                        <img src="./img/azzle/service-icon-orange-1.svg" alt="" class="absolute top-0 left-0 opacity-0">
+                    </div>
+                    <h3 class="text-[28px] font-bold mb-4 hover:text-orange-500 transition-all duration-500">
+                        <a href="#">
+                            Resource Flexibility
+                        </a>
+                    </h3>
+                    <p class=" text-lg mb-12 font-inter w-[99%]">This is an excellent option for people & small businesses who are starting
+                        out.</p>
+                    <div class="relative">
+                        <img src="./img/azzle/arrow-right-black.svg" alt="">
+                        <img src="./img/azzle/arrow-right-orange.svg" alt="" class="absolute top-0 left-0 opacity-0">
+                    </div>
+                </div>
+                <div class="item bg-white p-[30px] transition-all duration-500">
+                    <div class="relative mb-9 h-[70px] w-[70px]">
+                        <img src="./img/azzle/service-icon-black-2.svg" alt="">
+                        <img src="./img/azzle/service-icon-orange-2.svg" alt="" class="absolute top-0 left-0 opacity-0">
+                    </div>
+                    <h3 class="text-[28px] font-bold mb-4 hover:text-orange-500 transition-all duration-500">
+                        <a href="#">
+                            Managed Services
+                        </a>
+                    </h3>
+                    <p class=" text-lg mb-12 font-inter w-[99%]">This is an excellent option for people & small businesses who are starting
+                        out.</p>
+                    <div class="relative">
+                        <img src="./img/azzle/arrow-right-black.svg" alt="">
+                        <img src="./img/azzle/arrow-right-orange.svg" alt="" class="absolute top-0 left-0 opacity-0">
+                    </div>
+                </div>
+                <div class="item bg-white p-[30px] transition-all duration-500">
+                    <div class="relative mb-9 h-[70px] w-[70px]">
+                        <img src="./img/azzle/service-icon-black-3.svg" alt="">
+                        <img src="./img/azzle/service-icon-orange-3.svg" alt="" class="absolute top-0 left-0 opacity-0">
+                    </div>
+                    <h3 class="text-[28px] font-bold mb-4 whitespace-nowrap hover:text-orange-500 transition-all duration-500">
+                        <a href="#">
+                            Web-Based Access
+                        </a>
+                    </h3>
+                    <p class=" text-lg mb-12 font-inter w-[99%]">This is an excellent option for people & small businesses who are starting
+                        out.</p>
+                    <div class="relative">
+                        <img src="./img/azzle/arrow-right-black.svg" alt="">
+                        <img src="./img/azzle/arrow-right-orange.svg" alt="" class="absolute top-0 left-0 opacity-0">
+                    </div>
+                </div>
+                <div class="item bg-white rounded-r-[10px] p-[30px] transition-all duration-500">
+                    <div class="relative mb-9 h-[70px] w-[70px]">
+                        <img src="./img/azzle/service-icon-black-4.svg" alt="">
+                        <img src="./img/azzle/service-icon-orange-4.svg" alt="" class="absolute top-0 left-0 opacity-0">
+                    </div>
+                    <h3 class="text-[28px] font-bold mb-4 hover:text-orange-500 transition-all duration-500">
+                        <a href="#">
+                            Resource Flexibility
+                        </a>
+                    </h3>
+                    <p class=" text-lg mb-12 font-inter w-[99%]">This is an excellent option for people & small businesses who are starting
+                        out.</p>
+                    <div class="relative">
+                        <img src="./img/azzle/arrow-right-black.svg" alt="">
+                        <img src="./img/azzle/arrow-right-orange.svg" alt="" class="absolute top-0 left-0 opacity-0">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -170,7 +251,7 @@
                     data-twe-nav-ref>
                     <li role="presentation">
                         <a href="#monthly"
-                            class="inline-block px-6 py-2 text-sm font-semibold rounded-full border border-black text-black bg-black text-white data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white"
+                            class="inline-block px-6 py-2 text-sm font-semibold rounded-full border border-black bg-black text-white data-[twe-nav-active]:bg-black data-[twe-nav-active]:text-white"
                             id="monthly-tab" data-twe-toggle="pill" data-twe-target="#monthly" role="tab"
                             aria-controls="monthly" aria-selected="true" data-twe-nav-active>
                             Monthly
@@ -302,92 +383,99 @@
     <!-- Ngoc -->
     <section class="feedbacks">
         <div class="container bg-black text-white font-sans">
-        <div class="max-w-7xl mx-auto px-4 py-16">
-            <h2 class="text-4xl md:text-5xl flex justify-center items-center font-bold text-center mx-auto w-[500px] mb-5">Positive feedback from our users</h2>
+            <div class="max-w-7xl mx-auto px-4 py-16">
+                <h2
+                    class="text-4xl md:text-5xl flex justify-center items-center font-bold text-center mx-auto w-[500px] mb-5">
+                    Positive feedback from our users</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <!-- Feedback Card -->
-                <div class="bg-zinc-900 p-6 rounded-lg">
-                    <div class="text-red-600 mb-4">★★★★★</div>
-                    <p class="mb-4">“This AI SaaS tool has revolutionized the way we process and analyze data. This is a
-                        game-changer for our business.”</p>
-                    <div class="flex items-center mt-4">
-                        <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=1" alt="User">
-                        <div>
-                            <p class="font-bold">Max Weber</p>
-                            <p class="text-sm text-gray-400">HR Manager</p>
+                    <!-- Feedback Card -->
+                    <div class="bg-zinc-900 p-6 rounded-lg">
+                        <div class="text-red-600 mb-4">★★★★★</div>
+                        <p class="mb-4">“This AI SaaS tool has revolutionized the way we process and analyze data. This
+                            is a
+                            game-changer for our business.”</p>
+                        <div class="flex items-center mt-4">
+                            <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=1" alt="User">
+                            <div>
+                                <p class="font-bold">Max Weber</p>
+                                <p class="text-sm text-gray-400">HR Manager</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Repeat other feedbacks similarly -->
-                <div class="bg-zinc-900 p-6 rounded-lg">
-                    <div class="text-red-600 mb-4">★★★★★</div>
-                    <p class="mb-4">"It answers immediately, and we've seen a significant reduction in response time.
-                        Our customers love it and so do we!"</p>
-                    <div class="flex items-center mt-4">
-                        <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=2" alt="User">
-                        <div>
-                            <p class="font-bold">Douglas Smith</p>
-                            <p class="text-sm text-gray-400">Businessman</p>
+                    <!-- Repeat other feedbacks similarly -->
+                    <div class="bg-zinc-900 p-6 rounded-lg">
+                        <div class="text-red-600 mb-4">★★★★★</div>
+                        <p class="mb-4">"It answers immediately, and we've seen a significant reduction in response
+                            time.
+                            Our customers love it and so do we!"</p>
+                        <div class="flex items-center mt-4">
+                            <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=2" alt="User">
+                            <div>
+                                <p class="font-bold">Douglas Smith</p>
+                                <p class="text-sm text-gray-400">Businessman</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="bg-zinc-900 p-6 rounded-lg">
-                    <div class="text-red-600 mb-4">★★★★★</div>
-                    <p class="mb-4">"It is accurate, fast and supports multiple languages support. It is a must for any
-                        international business success."</p>
-                    <div class="flex items-center mt-4">
-                        <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=3" alt="User">
-                        <div>
-                            <p class="font-bold">Abraham Maslo</p>
-                            <p class="text-sm text-gray-400">Founder @ Marketing Company</p>
+                    <div class="bg-zinc-900 p-6 rounded-lg">
+                        <div class="text-red-600 mb-4">★★★★★</div>
+                        <p class="mb-4">"It is accurate, fast and supports multiple languages support. It is a must for
+                            any
+                            international business success."</p>
+                        <div class="flex items-center mt-4">
+                            <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=3" alt="User">
+                            <div>
+                                <p class="font-bold">Abraham Maslo</p>
+                                <p class="text-sm text-gray-400">Founder @ Marketing Company</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="bg-zinc-900 p-6 rounded-lg">
-                    <div class="text-red-600 mb-4">★★★★★</div>
-                    <p class="mb-4">"Security is a top concern for us, and AI SaaS takes it seriously. It’s a reassuring
-                        layer of protection for our organization."</p>
-                    <div class="flex items-center mt-4">
-                        <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=4" alt="User">
-                        <div>
-                            <p class="font-bold">Jack Fayol</p>
-                            <p class="text-sm text-gray-400">HR Manager</p>
+                    <div class="bg-zinc-900 p-6 rounded-lg">
+                        <div class="text-red-600 mb-4">★★★★★</div>
+                        <p class="mb-4">"Security is a top concern for us, and AI SaaS takes it seriously. It’s a
+                            reassuring
+                            layer of protection for our organization."</p>
+                        <div class="flex items-center mt-4">
+                            <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=4" alt="User">
+                            <div>
+                                <p class="font-bold">Jack Fayol</p>
+                                <p class="text-sm text-gray-400">HR Manager</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="bg-zinc-900 p-6 rounded-lg">
-                    <div class="text-red-600 mb-4">★★★★★</div>
-                    <p class="mb-4">"We were concerned about integrating their APIs were well documented, and their
-                        support team was super cool."</p>
-                    <div class="flex items-center mt-4">
-                        <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=5" alt="User">
-                        <div>
-                            <p class="font-bold">Karen Lynn</p>
-                            <p class="text-sm text-gray-400">Software Engineer</p>
+                    <div class="bg-zinc-900 p-6 rounded-lg">
+                        <div class="text-red-600 mb-4">★★★★★</div>
+                        <p class="mb-4">"We were concerned about integrating their APIs were well documented, and their
+                            support team was super cool."</p>
+                        <div class="flex items-center mt-4">
+                            <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=5" alt="User">
+                            <div>
+                                <p class="font-bold">Karen Lynn</p>
+                                <p class="text-sm text-gray-400">Software Engineer</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="bg-zinc-900 p-6 rounded-lg">
-                    <div class="text-red-600 mb-4">★★★★★</div>
-                    <p class="mb-4">"The return on investment has exceeded our expectations. It’s an investment in the
-                        future of our business."</p>
-                    <div class="flex items-center mt-4">
-                        <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=6" alt="User">
-                        <div>
-                            <p class="font-bold">Henry Ochi</p>
-                            <p class="text-sm text-gray-400">Bank Manager</p>
+                    <div class="bg-zinc-900 p-6 rounded-lg">
+                        <div class="text-red-600 mb-4">★★★★★</div>
+                        <p class="mb-4">"The return on investment has exceeded our expectations. It’s an investment in
+                            the
+                            future of our business."</p>
+                        <div class="flex items-center mt-4">
+                            <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=6" alt="User">
+                            <div>
+                                <p class="font-bold">Henry Ochi</p>
+                                <p class="text-sm text-gray-400">Bank Manager</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Bao -->

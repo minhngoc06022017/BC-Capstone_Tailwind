@@ -1,0 +1,10 @@
+.features .item:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.features .item:hover div img:nth-child(2) {
+    opacity: 1;
+    transition: all 0.5s ease;
+}
