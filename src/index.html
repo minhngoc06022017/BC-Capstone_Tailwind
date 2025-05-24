@@ -24,11 +24,86 @@
                 </div>
 
                 <!-- Menu items -->
-                <ul class="hidden md:flex gap-8 items-center text-[16px] font-medium text-black">
+                <ul class="hidden md:flex gap-8 items-center text-[16px] font-medium text-black relative">
+
+                    <!-- Demo -->
                     <li class="cursor-pointer hover:text-gray-700">Demo <span class="ml-1">▼</span></li>
+
+                    <!-- About -->
                     <li class="cursor-pointer hover:text-gray-700">About</li>
+
+                    <!-- Services -->
                     <li class="cursor-pointer hover:text-gray-700">Services <span class="ml-1">▼</span></li>
-                    <li class="cursor-pointer hover:text-gray-700">Pages <span class="ml-1">▼</span></li>
+
+                    <!-- Pages -->
+                    <li class="relative group">
+                        <span class="cursor-pointer hover:text-gray-700 flex items-center">Pages <span
+                                class="ml-1">▼</span></span>
+
+                        <!-- Dropdown menu -->
+                        <ul
+                            class="absolute top-full left-0 w-52 bg-white shadow-lg rounded-md opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-20">
+
+                            <!-- Blogs (nested group) -->
+                            <li class="relative group/blog">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-red-500">Blogs</a>
+
+                                <!-- Submenu Blog Details -->
+                                <ul
+                                    class="absolute top-0 left-full w-52 bg-white shadow-lg rounded-md opacity-0 group-hover/blog:opacity-100 invisible group-hover/blog:visible transition-all duration-300 z-20">
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Blogs</a></li>
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Blog Details</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="relative group/blog">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-red-500">Team</a>
+
+                                <!-- Submenu Blog Details -->
+                                <ul
+                                    class="absolute top-0 left-full w-52 bg-white shadow-lg rounded-md opacity-0 group-hover/blog:opacity-100 invisible group-hover/blog:visible transition-all duration-300 z-20">
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Teams</a></li>
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Team Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="relative group/blog">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-red-500">FAQ</a>
+
+                                <!-- Submenu Blog Details -->
+                                <ul
+                                    class="absolute top-0 left-full w-52 bg-white shadow-lg rounded-md opacity-0 group-hover/blog:opacity-100 invisible group-hover/blog:visible transition-all duration-300 z-20">
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">FAG-1</a></li>
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">FAQ-2</a></li>
+                                </ul>
+                            </li>
+                            <li class="relative group/blog">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-red-500">Portfolio</a>
+
+                                <!-- Submenu Blog Details -->
+                                <ul
+                                    class="absolute top-0 left-full w-52 bg-white shadow-lg rounded-md opacity-0 group-hover/blog:opacity-100 invisible group-hover/blog:visible transition-all duration-300 z-20">
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Portfolio</a></li>
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Portfolio Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Utilities</a></li>
+                            <li class="relative group/blog">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100 text-red-500">Portfolio</a>
+
+                                <!-- Submenu Blog Details -->
+                                <ul
+                                    class="absolute top-0 left-full w-52 bg-white shadow-lg rounded-md opacity-0 group-hover/blog:opacity-100 invisible group-hover/blog:visible transition-all duration-300 z-20">
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Error 404</a></li>
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Login</a></li>
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Signup</a></li>
+                                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Reset Password</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <!-- Contact -->
                     <li class="cursor-pointer hover:text-gray-700">Contact</li>
                 </ul>
 
@@ -48,8 +123,8 @@
     </header>
 
     <section class="header">
-        <div class="container">
-            <section class="bg-[#f3eee7] py-20 px-6 md:px-16 text-center">
+        <div class="container w-full">
+            <section class="bg-[#f3eee7] py-20 text-center">
                 <!-- Heading -->
                 <h1 class="text-4xl md:text-6xl font-extrabold text-black leading-tight mb-6">
                     Simplify your SaaS<br />
@@ -76,21 +151,27 @@
 
                 <!-- Image -->
                 <div class="flex justify-center">
-                    <img src="your-dashboard-image.png" alt="Dashboard Preview"
+                    <img src="/src/img/azzle/hero-dashboard.jpg" alt="Dashboard Preview"
                         class="rounded-xl shadow-lg w-full max-w-5xl border-[10px] border-black" />
                 </div>
 
-                <!-- Logo section -->
-                <div class="border-t mt-16 pt-8">
-                    <p class="text-sm text-gray-700 mb-6">
+                <!-- Brand Logo Slider -->
+                <div class="overflow-hidden w-full mt-16 border-t pt-8 bg-[#f3eee7]">
+                    <p class="text-sm text-gray-700 mb-6 text-center">
                         Companies of all sizes trust us to find AI SaaS critical to their growth and innovation
                     </p>
-                    <div class="flex flex-wrap justify-center items-center gap-8">
-                        <img src="logo-greenish.svg" alt="Greenish" class="h-6" />
-                        <img src="logo-luminous.svg" alt="Luminous" class="h-6" />
-                        <img src="logo-network.svg" alt="Network" class="h-6" />
-                        <img src="logo-umbrella.svg" alt="Umbrella" class="h-6" />
-                        <img src="logo-sitemark.svg" alt="Sitemark" class="h-6" />
+
+                    <div class="relative w-full overflow-hidden">
+                        <div id="brandSlider" class="flex transition-transform duration-700 ease-in-out">
+                            <img src="/src/img/azzle/brand-1.png" alt="Network" class="w-[20vw] max-w-none h-auto object-contain"/>
+                            <img src="/src/img/azzle/brand-2.png" alt="Umbrella" class="w-[20vw] max-w-none h-auto object-contain" />
+                            <img src="/src/img/azzle/brand-3.png" alt="Sitemark" class="w-[20vw] max-w-none h-auto object-contain" />
+                            <img src="/src/img/azzle/brand-4.png" alt="Greenish" class="w-[20vw] max-w-none h-auto object-contain" />
+                            <img src="/src/img/azzle/brand-5.png" alt="Luminous" class="w-[20vw] max-w-none h-auto object-contain" />
+                            <!-- Clone để tạo hiệu ứng vô hạn -->
+                            <img src="/src/img/azzle/brand-1.png" alt="Network" class="w-[20vw] max-w-none h-auto object-contain" />
+                            <img src="/src/img/azzle/brand-2.png" alt="Umbrella" class="w-[20vw] max-w-none h-auto object-contain" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -98,29 +179,14 @@
         </div>
     </section>
 
-    <!-- Bao -->
-    <section class="features">
-        <div class="container">
-
-        </div>
-    </section>
-
-    <!-- Bao -->
-    <section class="benefit">
-        <div class="container">
-
-        </div>
-    </section>
-
     <!-- Ngoc -->
     <section class="statics">
         <div class="container">
-            <div class="bg-black text-white p-8 rounded-3xl max-w-6xl mx-auto my-5">
+            <div class="bg-black text-white p-8 rounded-3xl max-w-7xl mx-auto my-5">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <!-- Ảnh bên trái -->
                     <div class="relative">
-                        <img src="https://i.imgur.com/0b5d04e2-850e-468b-9ffd-11b142ce97c5.png" alt="AI powered"
-                            class="w-full rounded-3xl" />
+                        <img src="/src//img/azzle/funfact-image.jpg" alt="AI powered" class="w-full rounded-3xl" />
                         <button
                             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black bg-opacity-50 border-4 border-white rounded-full w-24 h-24 flex items-center justify-center text-white font-bold hover:bg-red-600 hover:border-red-600 transition"
                             aria-label="Play video">
@@ -129,7 +195,7 @@
                     </div>
                     <!-- Nội dung bên phải -->
                     <div class="space-y-6">
-                        <h2 class="text-4xl font-extrabold leading-tight">
+                        <h2 class="text-6xl font-extrabold leading-tight">
                             AI-powered that streamline tasks
                         </h2>
                         <p class="text-white/90">
@@ -139,13 +205,17 @@
                         </p>
                         <div class="flex gap-16 text-red-600 text-6xl font-extrabold">
                             <div class="flex flex-col">
-                                <span>92%</span>
+                                <span class="number" data="0" data-to="92">
+                                    92%
+                                </span>
                                 <span class="text-base font-normal text-white/90 mt-1">
                                     Customer service inquiries
                                 </span>
                             </div>
                             <div class="flex flex-col">
-                                <span>75%</span>
+                                <span class="number" data="0" data-to="75">
+                                    75%
+                                </span>
                                 <span class="text-base font-normal text-white/90 mt-1">
                                     Using financial institutions
                                 </span>
@@ -161,7 +231,7 @@
     <!-- Ngoc -->
     <section class="packs">
         <div class="container mx-auto px-4">
-            <h1 class="text-4xl md:text-6xl flex justify-center items-center w-[500px] text-center mx-auto">
+            <h1 class="text-4xl md:text-7xl font-bold flex justify-center items-center w-[650px] text-center mx-auto">
                 Cost-effectively build any software
             </h1>
             <div class="my-5">
@@ -290,114 +360,150 @@
         </div>
     </section>
 
-
-
-    <!-- Bao -->
-    <section class="information">
-        <div class="container">
-
-        </div>
-    </section>
-
     <!-- Ngoc -->
     <section class="feedbacks">
         <div class="container bg-black text-white font-sans">
-        <div class="max-w-7xl mx-auto px-4 py-16">
-            <h2 class="text-4xl md:text-5xl flex justify-center items-center font-bold text-center mx-auto w-[500px] mb-5">Positive feedback from our users</h2>
+            <div class="max-w-7xl mx-auto px-4 py-16">
+                <h2
+                    class="text-4xl md:text-7xl flex justify-center items-center font-bold text-center mx-auto w-[700px] mb-5">
+                    Positive feedback from our users</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <!-- Feedback Card -->
-                <div class="bg-zinc-900 p-6 rounded-lg">
-                    <div class="text-red-600 mb-4">★★★★★</div>
-                    <p class="mb-4">“This AI SaaS tool has revolutionized the way we process and analyze data. This is a
-                        game-changer for our business.”</p>
-                    <div class="flex items-center mt-4">
-                        <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=1" alt="User">
-                        <div>
-                            <p class="font-bold">Max Weber</p>
-                            <p class="text-sm text-gray-400">HR Manager</p>
+                    <!-- Feedback Card -->
+                    <div class="bg-zinc-900 p-6 rounded-lg">
+                        <div class="text-red-600 mb-4">★★★★★</div>
+                        <p class="mb-4">“This AI SaaS tool has revolutionized the way we process and analyze data. This
+                            is a
+                            game-changer for our business.”</p>
+                        <div class="flex items-center mt-4">
+                            <img class="w-10 h-10 rounded-full mr-3" src="/src/img/azzle/testimonial-img-1.jpg"
+                                alt="User">
+                            <div>
+                                <p class="font-bold">Max Weber</p>
+                                <p class="text-sm text-gray-400">HR Manager</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Repeat other feedbacks similarly -->
-                <div class="bg-zinc-900 p-6 rounded-lg">
-                    <div class="text-red-600 mb-4">★★★★★</div>
-                    <p class="mb-4">"It answers immediately, and we've seen a significant reduction in response time.
-                        Our customers love it and so do we!"</p>
-                    <div class="flex items-center mt-4">
-                        <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=2" alt="User">
-                        <div>
-                            <p class="font-bold">Douglas Smith</p>
-                            <p class="text-sm text-gray-400">Businessman</p>
+                    <!-- Repeat other feedbacks similarly -->
+                    <div class="bg-zinc-900 p-6 rounded-lg">
+                        <div class="text-red-600 mb-4">★★★★★</div>
+                        <p class="mb-4">"It answers immediately, and we've seen a significant reduction in response
+                            time.
+                            Our customers love it and so do we!"</p>
+                        <div class="flex items-center mt-4">
+                            <img class="w-10 h-10 rounded-full mr-3" src="/src/img/azzle/testimonial-img-2.jpg"
+                                alt="User">
+                            <div>
+                                <p class="font-bold">Douglas Smith</p>
+                                <p class="text-sm text-gray-400">Businessman</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="bg-zinc-900 p-6 rounded-lg">
-                    <div class="text-red-600 mb-4">★★★★★</div>
-                    <p class="mb-4">"It is accurate, fast and supports multiple languages support. It is a must for any
-                        international business success."</p>
-                    <div class="flex items-center mt-4">
-                        <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=3" alt="User">
-                        <div>
-                            <p class="font-bold">Abraham Maslo</p>
-                            <p class="text-sm text-gray-400">Founder @ Marketing Company</p>
+                    <div class="bg-zinc-900 p-6 rounded-lg">
+                        <div class="text-red-600 mb-4">★★★★★</div>
+                        <p class="mb-4">"It is accurate, fast and supports multiple languages support. It is a must for
+                            any
+                            international business success."</p>
+                        <div class="flex items-center mt-4">
+                            <img class="w-10 h-10 rounded-full mr-3" src="/src/img/azzle/testimonial-img-3.jpg"
+                                alt="User">
+                            <div>
+                                <p class="font-bold">Abraham Maslo</p>
+                                <p class="text-sm text-gray-400">Founder @ Marketing Company</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="bg-zinc-900 p-6 rounded-lg">
-                    <div class="text-red-600 mb-4">★★★★★</div>
-                    <p class="mb-4">"Security is a top concern for us, and AI SaaS takes it seriously. It’s a reassuring
-                        layer of protection for our organization."</p>
-                    <div class="flex items-center mt-4">
-                        <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=4" alt="User">
-                        <div>
-                            <p class="font-bold">Jack Fayol</p>
-                            <p class="text-sm text-gray-400">HR Manager</p>
+                    <div class="bg-zinc-900 p-6 rounded-lg">
+                        <div class="text-red-600 mb-4">★★★★★</div>
+                        <p class="mb-4">"Security is a top concern for us, and AI SaaS takes it seriously. It’s a
+                            reassuring
+                            layer of protection for our organization."</p>
+                        <div class="flex items-center mt-4">
+                            <img class="w-10 h-10 rounded-full mr-3" src="/src/img/azzle/testimonial-img-4.jpg"
+                                alt="User">
+                            <div>
+                                <p class="font-bold">Jack Fayol</p>
+                                <p class="text-sm text-gray-400">HR Manager</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="bg-zinc-900 p-6 rounded-lg">
-                    <div class="text-red-600 mb-4">★★★★★</div>
-                    <p class="mb-4">"We were concerned about integrating their APIs were well documented, and their
-                        support team was super cool."</p>
-                    <div class="flex items-center mt-4">
-                        <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=5" alt="User">
-                        <div>
-                            <p class="font-bold">Karen Lynn</p>
-                            <p class="text-sm text-gray-400">Software Engineer</p>
+                    <div class="bg-zinc-900 p-6 rounded-lg">
+                        <div class="text-red-600 mb-4">★★★★★</div>
+                        <p class="mb-4">"We were concerned about integrating their APIs were well documented, and their
+                            support team was super cool."</p>
+                        <div class="flex items-center mt-4">
+                            <img class="w-10 h-10 rounded-full mr-3" src="/src/img/azzle/testimonial-img-5.jpg"
+                                alt="User">
+                            <div>
+                                <p class="font-bold">Karen Lynn</p>
+                                <p class="text-sm text-gray-400">Software Engineer</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="bg-zinc-900 p-6 rounded-lg">
-                    <div class="text-red-600 mb-4">★★★★★</div>
-                    <p class="mb-4">"The return on investment has exceeded our expectations. It’s an investment in the
-                        future of our business."</p>
-                    <div class="flex items-center mt-4">
-                        <img class="w-10 h-10 rounded-full mr-3" src="https://i.pravatar.cc/100?img=6" alt="User">
-                        <div>
-                            <p class="font-bold">Henry Ochi</p>
-                            <p class="text-sm text-gray-400">Bank Manager</p>
+                    <div class="bg-zinc-900 p-6 rounded-lg">
+                        <div class="text-red-600 mb-4">★★★★★</div>
+                        <p class="mb-4">"The return on investment has exceeded our expectations. It’s an investment in
+                            the
+                            future of our business."</p>
+                        <div class="flex items-center mt-4">
+                            <img class="w-10 h-10 rounded-full mr-3" src="/src/img/azzle/testimonial-img-6.jpg"
+                                alt="User">
+                            <div>
+                                <p class="font-bold">Henry Ochi</p>
+                                <p class="text-sm text-gray-400">Bank Manager</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
-    <!-- Bao -->
-    <footer class="footer">
-        <div class="container">
-
-        </div>
-    </footer>
-
     <script src="/node_modules/tw-elements/js/tw-elements.umd.min.js"></script>
+
+    <script>
+        let counts = document.querySelectorAll(".number");
+        setInterval(() => {
+            counts.forEach((count) => {
+                let data = +count.getAttribute("data");
+                let dataTo = +count.getAttribute("data-to");
+                if (data < dataTo) {
+                    data += 1;
+                    if (data >= dataTo)
+                        data = dataTo;
+                    count.innerHTML = data + '%';
+                    count.setAttribute("data", data);
+                }
+            }, 1);
+        });
+    </script>
+
+    <script>
+        const slider = document.getElementById('brandSlider');
+        const brandWidth = window.innerWidth * 0.2; // 20vw
+        let index = 0;
+
+        setInterval(() => {
+            index++;
+            slider.style.transform = `translateX(-${brandWidth * index}px)`;
+
+            // Reset để loop lại nếu quá nửa
+            if (index >= slider.children.length - 5) {
+                setTimeout(() => {
+                    slider.style.transition = 'none';
+                    index = 0;
+                    slider.style.transform = `translateX(0px)`;
+                    void slider.offsetWidth; // force reflow
+                    slider.style.transition = 'transform 0.7s ease-in-out';
+                }, 700); // Wait for transition to complete
+            }
+        }, 5000);
+    </script>
 </body>
 
 </html>
