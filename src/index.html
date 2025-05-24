@@ -19,6 +19,9 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
     <link rel="stylesheet" href="./css/custom.css">
 </head>
 
@@ -109,11 +112,11 @@
 
     <!-- Bao -->
     <section class="features">
-        <div class="container-fluid w-[85.5%] mx-auto pt-[130px] pb-[150px]">
-            <h1 class=" text-[80px] font-bold w-[60%] leading-20 tracking-wide mb-20">
+        <div class="container-fluid w-[85.5%] mx-auto pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]">
+            <h1 class=" fade-up font-bold md:max-w-sm lg:max-w-xl xl:max-w-[746px] text-[36px] leading-10 lg:text-[60px] xl:text-[72px] xxl:text-[80px] xl:leading-20 tracking-wide mb-10 lg:mb-16 xl:mb-20 wow " animate="fadeInUp">
                 Core features that make it valuable
             </h1>
-            <div class="grid grid-cols-4 gap-0.5 bg-black border-2 border-black rounded-xl">
+            <div class=" fade-up grid grid-cols-1 overflow-hidden sm:grid-cols-2 lg:grid-cols-4 gap-0.5 bg-black border-2 border-black rounded-xl wow">
                 <div class="item bg-white rounded-l-[10px] p-[30px] transition-all duration-500">
                     <div class="relative mb-9 h-[70px] w-[70px]">
                         <img src="./img/azzle/service-icon-black-1.svg" alt="">
@@ -194,48 +197,48 @@
     <!-- Bao -->
     <section class="benefit">
         <div class="container-fluid w-[85.5%] mx-auto">
-            <div class="grid grid-cols-2 gap-32 pb-[150px]">
-                <img src="./img/azzle/content-image-1.jpg" alt="" class="w-full h-auto">
-                <div class="my-auto w-full h-auto">
-                    <h2 class=" text-base text-[80px] font-bold leading-20 tracking-wide mb-6">Accessible to a wider
+            <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap20 xl:gap-28 xxl:gap-32 pb-20 xl:pb-[150px]">
+                <img src="./img/azzle/content-image-1.jpg" alt="" class="w-full h-auto wow fade-out-left overflow-hidden order-2 md:order-1">
+                <div class="my-auto w-full h-auto wow fade-out-right order-1 md:order-2">
+                    <h2 class=" text-base text-[36px] leading-10 lg:text-[60px] xl:text-[72px] xxl:text-[80px] font-bold xl:leading-20 tracking-wide mb-6">Accessible to a wider
                         audience</h2>
-                    <p class=" text-[21px] mb-7 font-inter text-[#191919]">Advanced AI capabilities accessible to a
+                    <p class=" text-[21px] mb-7 last:mb-0 font-inter text-[#191919]">Advanced AI capabilities accessible to a
                         broader audience, including small & medium-sized businesses and individuals who may not have the
                         resources or expertise to develop.</p>
-                    <p class="text-[21px] font-inter text-[#191919]">Advanced AI capabilities accessible to a broader
+                    <p class="text-[21px] mb-7 last:mb-0 font-inter text-[#191919]">Advanced AI capabilities accessible to a broader
                         audience, including small & medium-sized businesses and individuals who may not have the
                         resources or expertise to develop.</p>
                 </div>
             </div>
-            <div class="grid grid-cols-[minmax(0,_1.2fr)_1fr] gap-32 pb-[150px]">
-                <div class="my-auto w-full h-auto">
-                    <h2 class=" text-base text-[80px] font-bold leading-20 tracking-wide mb-6">Providing quick deploy
+            <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32 pb-[150px]">
+                <div class="my-auto w-full h-auto wow fade-in-left">
+                    <h2 class=" text-base text-[36px] leading-10 lg:text-[60px] xl:text-[72px] xxl:text-[80px] font-bold xl:leading-20 tracking-wide mb-6">Providing quick deploy
                         solutions</h2>
-                    <p class=" text-[21px] mb-7 font-inter text-[#191919]">Our AI SaaS solutions can be quickly
-                        deployed, enabling users <br> to start benefiting from AI capabilities without lengthy setup and
+                    <p class=" text-[21px] mb-7 font-inter text-[#191919] w-[95%]">Our AI SaaS solutions can be quickly
+                        deployed, enabling users to start benefiting from AI capabilities without lengthy setup and
                         development times in fast-paced industries.</p>
-                    <ul>
+                    <ul class="text-xl font-bold leading-tight tracking-tighter text-black lg:mt-12 lg:text-[28px]">
                         <li class="flex items-center gap-3 mb-5">
                             <div>
                                 <img src="./img/azzle/check-circle.svg" alt="">
                             </div>
-                            <span class=" text-[28px] font-bold">Ready-to-use AI capabilities system</span>
+                            <span class="">Ready-to-use AI capabilities system</span>
                         </li>
                         <li class="flex items-center gap-3 mb-5">
                             <div>
                                 <img src="./img/azzle/check-circle.svg" alt="">
                             </div>
-                            <span class=" text-[28px] font-bold">Users can quickly integrate AI features</span>
+                            <span class="">Users can quickly integrate AI features</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <div>
                                 <img src="./img/azzle/check-circle.svg" alt="">
                             </div>
-                            <span class=" text-[28px] font-bold">Time savings translate to cost savings</span>
+                            <span class="">Time savings translate to cost savings</span>
                         </li>
                     </ul>
                 </div>
-                <img src="./img/azzle/content-image-2.jpg" alt="" class="w-full h-auto">
+                <img src="./img/azzle/content-image-2.jpg" alt="" class="w-full h-auto wow fade-in-right">
             </div>
         </div>
     </section>
@@ -420,90 +423,81 @@
 
     <!-- Bao -->
     <section class="information">
-        <div class="container-fluid w-[85.5%] mx-auto flex items-center justify-between py-20">
-            <div class="w-[51%]">
-                <h1 class="text-base text-[80px] font-bold leading-20 tracking-wide mb-6">Freely ask us for more
+        <div class="container-fluid w-[85.5%] mx-auto flex flex-col lg:flex-row items-center justify-around lg:justify-between pb-[150px]">
+            <div class=" w-full lg:w-[51%] wow fade-in-left">
+                <h1 class="text-base font-bold md:max-w-sm lg:max-w-xl xl:max-w-[746px] text-[36px] leading-10 lg:text-[60px] xl:text-[72px] xxl:text-[80px] xl:leading-20 tracking-wide mb-6">Freely ask us for more
                     information</h1>
                 <p class="text-[21px] mb-7 font-inter text-[#191919]">Our AI SaaS solutions can be quickly deployed,
                     enabling users to start benefiting from AI capabilities without lengthy setup and development times
                     in fast-paced industries.</p>
                 <button>Ask you questions</button>
             </div>
-            <div class="w-[40%]">
-                <div id="accordionExample">
+            <div class=" w-full lg:w-[40%] wow fade-in-right">
+                <div id="accordionFlushExample">
                     <div
-                        class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
-                        <h2 class="mb-0" id="headingOne">
+                        class="rounded-none border border-e-0 border-s-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
+                        <h2 class="mb-0" id="flush-headingOne">
                             <button
-                                class="group relative flex w-full items-center rounded-t-lg border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
-                                type="button" data-twe-collapse-init data-twe-target="#collapseOne" aria-expanded="true"
-                                aria-controls="collapseOne">
+                                class="group text-[28px] font-bold relative flex w-full items-center rounded-none border-0 bg-white py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white  [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 cursor-pointer"
+                                type="button" data-twe-collapse-init data-twe-target="#flush-collapseOne"
+                                aria-expanded="false" aria-controls="flush-collapseOne">
                                 How do I start AI SaaS?
                                 <span
-                                    class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                    </svg>
+                                    class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6 flex items-center">
+                                    <span class=" font-light text-4xl">+</span>
                                 </span>
                             </button>
                         </h2>
-                        <div id="collapseOne" class="!visible" data-twe-collapse-item data-twe-collapse-show
-                            aria-labelledby="headingOne" data-twe-parent="#accordionExample">
-                            <div class="px-5 py-4">
+                        <div id="flush-collapseOne" class="!visible border-0" data-twe-collapse-item
+                            data-twe-collapse-show aria-labelledby="flush-headingOne"
+                            data-twe-parent="#accordionFlushExample">
+                            <div class=" py-4 text-lg font-inter text-[#191919]">
                                 Go to the our official website and require users to create an account. You'll need to
                                 provide some basic information and agree to our terms and conditions.
                             </div>
                         </div>
                     </div>
                     <div
-                        class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
-                        <h2 class="mb-0" id="headingTwo">
+                        class="rounded-none border border-e-0 border-s-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
+                        <h2 class="mb-0" id="flush-headingTwo">
                             <button
-                                class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 "
+                                class="group text-[28px] font-bold relative flex w-full items-center rounded-none border-0 bg-white py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 cursor-pointer"
                                 type="button" data-twe-collapse-init data-twe-collapse-collapsed
-                                data-twe-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                data-twe-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
                                 Can I customize AI SaaS solutions?
                                 <span
-                                    class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                    </svg>
+                                    class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6 flex items-center">
+                                    <span class=" font-light text-4xl">+</span>
                                 </span>
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="!visible hidden" data-twe-collapse-item
-                            aria-labelledby="headingTwo" data-twe-parent="#accordionExample">
-                            <div class="px-5 py-4">
+                        <div id="flush-collapseTwo" class="!visible hidden border-0" data-twe-collapse-item
+                            aria-labelledby="flush-headingTwo" data-twe-parent="#accordionFlushExample">
+                            <div class=" py-4 text-lg font-inter text-[#191919]">
                                 Go to the our official website and require users to create an account. You'll need to
                                 provide some basic information and agree to our terms and conditions.
                             </div>
                         </div>
                     </div>
                     <div
-                        class="rounded-b-lg border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
-                        <h2 class="accordion-header mb-0" id="headingThree">
+                        class="rounded-none border border-b-0 border-e-0 border-s-0 border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-body-dark">
+                        <h2 class="mb-0" id="flush-headingThree">
                             <button
-                                class="data-[twe-collapse-collapsed] group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none data-[twe-collapse-collapsed]:rounded-b-lg dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:text-primary [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary  dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10"
+                                class="group text-[28px] font-bold relative flex w-full items-center rounded-none border-0 bg-white py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-body-dark dark:text-white [&:not([data-twe-collapse-collapsed])]:bg-white [&:not([data-twe-collapse-collapsed])]:shadow-border-b dark:[&:not([data-twe-collapse-collapsed])]:bg-surface-dark dark:[&:not([data-twe-collapse-collapsed])]:text-primary dark:[&:not([data-twe-collapse-collapsed])]:shadow-white/10 cursor-pointer"
                                 type="button" data-twe-collapse-init data-twe-collapse-collapsed
-                                data-twe-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                data-twe-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
                                 How can AI benefit my business?
                                 <span
-                                    class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                            d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                                    </svg>
+                                    class="-me-1 ms-auto h-5 w-5 shrink-0 rotate-[-180deg] transition-transform duration-200 ease-in-out group-data-[twe-collapse-collapsed]:me-0 group-data-[twe-collapse-collapsed]:rotate-0 motion-reduce:transition-none [&>svg]:h-6 [&>svg]:w-6 flex items-center">
+                                    <span class=" font-light text-4xl">+</span>
                                 </span>
                             </button>
                         </h2>
-                        <div id="collapseThree" class="!visible hidden" data-twe-collapse-item
-                            aria-labelledby="headingThree" data-twe-parent="#accordionExample">
-                            <div class="px-5 py-4">
+                        <div id="flush-collapseThree" class="!visible hidden" data-twe-collapse-item
+                            aria-labelledby="flush-headingThree" data-twe-parent="#accordionFlushExample">
+                            <div class=" py-4 text-lg font-inter text-[#191919]">
                                 Go to the our official website and require users to create an account. You'll need to
                                 provide some basic information and agree to our terms and conditions.
                             </div>
@@ -613,59 +607,118 @@
     </section>
 
     <!-- Bao -->
-    <footer class="bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-300 py-10">
+    <footer class=" footer relative z-[1] overflow-hidden -mt-[70px] rounded-tl-[50px] rounded-tr-[50px] bg-[#efeae3]">
+        <div
+            class="orange-gradient-2 absolute -top-[290px] right-[90px] z-[-10] h-[406px] w-[406px] -rotate-[58deg] rounded-[406px]">
+        </div>
+        <div
+            class="orange-gradient-1 absolute -right-[200px] -top-[205px] z-[-10] h-[451px] w-[451px] -rotate-[58deg] rounded-[451px]">
+        </div>
+        <div class="py-[60px] xl:pb-[100px] xl:pt-[130px]">
+            <div class="overflow-hidden">
+                <div class="footer-text-slider flex w-full items-center gap-x-[30px] whitespace-nowrap">
+                    <img src="./img/azzle/footer-text-slider-icon.svg" alt="footer-text-slider-icon" width="60"
+                        height="60" class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+                    <div
+                        class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">
+                        Start building software
+                    </div>
+                    <img src="./img/azzle/footer-text-slider-icon.svg" alt="footer-text-slider-icon" width="60"
+                        height="60" class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+                    <div
+                        class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">
+                        Start building software
+                    </div>
+                    <img src="./img/azzle/footer-text-slider-icon.svg" alt="footer-text-slider-icon" width="60"
+                        height="60" class="h-10 w-10 lg:h-[60px] lg:w-[60px]" />
+                    <div
+                        class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]">
+                        Start building software
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container-fluid w-[85.5%] mx-auto">
-            <div class="px-4 grid grid-cols-4 gap-8">
+            <div
+                class="lg grid grid-cols-1 border-y-[1px] border-[#DBD6CF] gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]">
                 <!-- Column 1: Description -->
                 <div>
-                    <h3 class="text-lg font-semibold mb-2">★ Azlle</h3>
-                    <p class="text-sm">
+                    <a href="#">
+                        <img src="./img/azzle/logo.png" alt="" width="96" height="24">
+                    </a>
+                    <p class="text-lg my-6 font-inter text-[#191919]">
                         Our mission is to harness the power of AI to solve complex business challenges & decision-makers
                         with data-driven insights, and enhance user experiences across digital platforms.
                     </p>
-                    <p class="text-sm mt-2">Website: www.example.com</p>
+                    <p class="text-lg font-inter text-[#191919]">
+                        Website: <a href="https://www.example.com">www.example.com</a>
+                    </p>
                 </div>
 
                 <!-- Column 2: Primary Pages -->
                 <div>
-                    <h3 class="text-lg font-semibold mb-2">Primary Pages</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-gray-900 dark:hover:text-white">Home</a></li>
-                        <li><a href="#" class="hover:text-gray-900 dark:hover:text-white">About Us</a></li>
-                        <li><a href="#" class="hover:text-gray-900 dark:hover:text-white">Services</a></li>
-                        <li><a href="#" class="hover:text-gray-900 dark:hover:text-white">Pricing</a></li>
-                        <li><a href="#" class="hover:text-gray-900 dark:hover:text-white">Contact</a></li>
+                    <h3 class="text-[21px] font-bold mb-3.5">Primary Pages</h3>
+                    <ul class="flex flex-col gap-y-[10px] text-lg font-inter text-[#191919]">
+                        <li><a href="#"
+                                class="hover:text-orange-500 dark:hover:text-white transition-all duration-300 ease-in-out">Home</a>
+                        </li>
+                        <li><a href="#"
+                                class="hover:text-orange-500 dark:hover:text-white transition-all duration-300 ease-in-out">About
+                                Us</a></li>
+                        <li><a href="#"
+                                class="hover:text-orange-500 dark:hover:text-white transition-all duration-300 ease-in-out">Services</a>
+                        </li>
+                        <li><a href="#"
+                                class="hover:text-orange-500 dark:hover:text-white transition-all duration-300 ease-in-out">Pricing</a>
+                        </li>
+                        <li><a href="#"
+                                class="hover:text-orange-500 dark:hover:text-white transition-all duration-300 ease-in-out">Contact</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-lg font-semibold mb-2">Utility pages</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-gray-900 dark:hover:text-white">Signup</a></li>
-                        <li><a href="#" class="hover:text-gray-900 dark:hover:text-white">Login</a></li>
-                        <li><a href="#" class="hover:text-gray-900 dark:hover:text-white">404 Not found</a></li>
-                        <li><a href="#" class="hover:text-gray-900 dark:hover:text-white">Password Reset</a></li>
+                    <h3 class="text-[21px] font-bold mb-3.5">Utility pages</h3>
+                    <ul class="flex flex-col gap-y-[10px] text-lg font-inter text-[#191919]">
+                        <li><a href="#"
+                                class="hover:text-orange-500 dark:hover:text-white transition-all duration-300 ease-in-out">Signup</a>
+                        </li>
+                        <li><a href="#"
+                                class="hover:text-orange-500 dark:hover:text-white transition-all duration-300 ease-in-out">Login</a>
+                        </li>
+                        <li><a href="#"
+                                class="hover:text-orange-500 dark:hover:text-white transition-all duration-300 ease-in-out">404
+                                Not found</a></li>
+                        <li><a href="#"
+                                class="hover:text-orange-500 dark:hover:text-white transition-all duration-300 ease-in-out">Password
+                                Reset</a></li>
                     </ul>
                 </div>
 
                 <!-- Column 3: Newsletter and Copyright -->
                 <div>
-                    <h3 class="text-lg font-semibold mb-2">Subscribe To Our Newsletter</h3>
-                    <div class="flex items-center">
+                    <h3 class="text-[21px] font-bold mb-3.5">Subscribe To Our Newsletter</h3>
+                    <div class="relative h-[50px] max-w-[300px]">
                         <input type="email" placeholder="Enter your email"
-                            class="w-full p-2 rounded-l-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-black dark:text-white focus:outline-none">
-                        <button class="bg-black text-white p-2 rounded-r-lg hover:bg-gray-800 transition">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 5l7 7-7 7" />
-                            </svg>
+                            class="w-full h-full py-[18px] rounded-[50px] border border-black bg-white text-black px-[24px] pr-20 focus:outline-none">
+                        <button
+                            class="absolute right-[5px] top-[50%] inline-block h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500 cursor-pointer">
+                            <img src="./img/azzle/arrow-right-large.svg" alt="">
                         </button>
                     </div>
                 </div>
             </div>
-            <p class="text-sm mt-4">© Copyright 2023, All Rights Reserved by Mthemeus</p>
+            <p class="py-9 text-center text-lg font-inter text-[#191919]">© Copyright 2023, All Rights Reserved by
+                Mthemeus</p>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <script src="/node_modules/tw-elements/js/tw-elements.umd.min.js"></script>
 

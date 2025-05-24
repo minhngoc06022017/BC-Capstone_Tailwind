@@ -15,7 +15,6 @@ module.exports = {
           DEFAULT: 'red',   // cấu hình màu primary
           100: '#990000'     // có thể cấu hình sâu hơn về màu sắc của primary
         },
-
       },
     },
   },

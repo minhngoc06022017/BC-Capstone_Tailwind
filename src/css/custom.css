@@ -13,3 +13,104 @@
     opacity: 1;
     transition: all 0.5s ease;
 }
+
+.orange-gradient-2 {
+    filter: blur(55px);
+    background: radial-gradient(50% 50% at 50% 50%, rgb(254, 51, 10) 0%, rgb(255, 152, 49) 100%);
+}
+
+.orange-gradient-1 {
+    filter: blur(55px);
+    background: radial-gradient(50% 50% at 50% 50%, rgb(255, 152, 49) 0%, rgb(254, 51, 10) 100%);
+}
+
+.footer .footer-text-slider{
+    /* display: block; */
+    white-space: nowrap;
+    animation: fadeLeft 15s linear infinite;
+}
+
+@keyframes fadeLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.features .fade-up {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fade-in-left {
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.fade-in-right {
+    animation: fadeInRight 1s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translateX(30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.fade-out-left {
+    animation: fadeOutLeft 1s ease-in-out;
+}
+
+.fade-out-right {
+    animation: fadeOutRight 1s ease-in-out;
+}
+
+@keyframes fadeOutLeft {
+    from {
+        transform: translateX(30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutRight {
+    from {
+        transform: translateX(-30%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
