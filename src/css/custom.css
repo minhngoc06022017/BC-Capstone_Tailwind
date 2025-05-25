@@ -1,0 +1,45 @@
+.hover-fill-red {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.hover-fill-red::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ff2d00;
+  z-index: -1;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  border-radius: inherit;
+}
+
+.hover-fill-red:hover::before {
+  transform: translateY(0);
+}
+
+.play-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 0.1);
+  animation: pulse-ring 2s infinite;
+  z-index: 0;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
