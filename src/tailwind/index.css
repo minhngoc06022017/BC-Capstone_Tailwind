@@ -5,3 +5,11 @@ body {
     @apply font-dm;
 }
 
+#carousel::-webkit-scrollbar {
+    display: none;
+}
+
+#carousel {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
